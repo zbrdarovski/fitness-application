@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Fitnes</string>
+    <string name="app_version">Verzija 6</string>
+    <string name="app_author">izdelal Zdravko Brdarovski</string>
+    <string name="app_description">#1 fitnes app.</string>
+    <string name="runner">tekač</string>
+    <string name="yoga">meditacija</string>
+    <string name="exercise">vadba</string>
+    <string name="input_fitness_name"><u>Vnesi ime fitnesa…</u></string>
+    <string name="input_fitness_address"><u>Vnesi adreso fitnesa…</u></string>
+    <string name="fitness_name">Ime fitnesa:</string>
+    <string name="fitness_address">Adresa fitnesa:</string>
+    <string name="send_button">POŠLJI</string>
+    <string name="qr_code_button">QR KODA</string>
+    <string name="fitness_image">Fitnes slika.</string>
+    <string name="about_button">O NAS</string>
+    <string name="exit_button">IZHOD</string>
+    <string name="add_button">DODAJ</string>
+    <string name="info_button">INFORMACIJE</string>
+
+</resources>

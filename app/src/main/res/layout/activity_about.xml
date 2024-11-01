@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AboutActivity">
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp32"
+        android:layout_marginTop="@dimen/dp32"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/app_name"
+        android:textColor="@color/teal_700"
+        android:textSize="@dimen/sp64"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/app_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp32"
+        android:text="@string/app_version"
+        android:textColor="@color/teal_700"
+        android:textSize="@dimen/sp32"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_name" />
+
+    <TextView
+        android:id="@+id/app_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp32"
+        android:text="@string/app_author"
+        android:textColor="@color/teal_700"
+        android:textSize="@dimen/sp16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_version" />
+
+    <TextView
+        android:id="@+id/app_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp64"
+        android:layout_marginTop="@dimen/dp64"
+        android:layout_marginEnd="@dimen/dp64"
+        android:text="@string/app_description"
+        android:textColor="@color/teal_700"
+        android:textSize="@dimen/sp16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_author" />
+
+    <TextView
+        android:id="@+id/app_uuid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text=""
+        android:textColor="@color/teal_700"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_author" />
+
+    <ImageView
+        android:id="@+id/runner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp64"
+        android:layout_marginEnd="@dimen/dp64"
+        android:layout_marginBottom="@dimen/dp64"
+        android:contentDescription="@string/runner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/yoga"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_runner" />
+
+
+    <ImageView
+        android:id="@+id/yoga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp64"
+        android:layout_marginEnd="@dimen/dp64"
+        android:layout_marginBottom="@dimen/dp64"
+        android:contentDescription="@string/yoga"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/runner"
+        app:srcCompat="@drawable/ic_yoga" />
+
+    <ImageView
+        android:id="@+id/exercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp128"
+        android:layout_marginTop="@dimen/dp128"
+        android:layout_marginEnd="@dimen/dp128"
+        android:contentDescription="@string/exercise"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_description"
+        app:srcCompat="@drawable/ic_exercise" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/fitness_image"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp128"
+        android:contentDescription="@string/fitness_image"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fitness" />
+
+    <Button
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp16"
+        android:layout_marginEnd="@dimen/dp16"
+        android:layout_marginBottom="@dimen/dp16"
+        android:background="@drawable/custom_button"
+        android:text="@string/about_button"
+        android:textColor="@color/teal_700"
+        app:backgroundTint="@color/teal_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/exit"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp16"
+        android:layout_marginEnd="@dimen/dp16"
+        android:layout_marginBottom="@dimen/dp16"
+        android:background="@drawable/custom_button"
+        android:text="@string/exit_button"
+        android:textColor="@color/teal_700"
+        app:backgroundTint="@color/teal_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/about"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp16"
+        android:layout_marginEnd="@dimen/dp16"
+        android:layout_marginBottom="@dimen/dp16"
+        android:background="@drawable/custom_button"
+        android:text="@string/add_button"
+        android:textColor="@color/teal_700"
+        app:backgroundTint="@color/teal_200"
+        app:layout_constraintBottom_toTopOf="@+id/exit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/info"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp16"
+        android:layout_marginEnd="@dimen/dp16"
+        android:layout_marginBottom="@dimen/dp16"
+        android:background="@drawable/custom_button"
+        android:text="@string/info_button"
+        android:textColor="@color/teal_700"
+        app:backgroundTint="@color/teal_200"
+        app:layout_constraintBottom_toTopOf="@+id/about"
+        app:layout_constraintEnd_toStartOf="@+id/add"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp16"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/custom_button"
+        android:text="language"
+        android:textColor="@color/teal_700"
+        app:backgroundTint="@color/teal_200"
+        app:layout_constraintBottom_toTopOf="@+id/info"
+        app:layout_constraintEnd_toStartOf="@+id/recycler"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/recycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp16"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/custom_button"
+        android:textColor="@color/teal_700"
+        app:backgroundTint="@color/teal_200"
+        android:text="RecyclerView"
+        app:layout_constraintBottom_toTopOf="@+id/add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/language" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

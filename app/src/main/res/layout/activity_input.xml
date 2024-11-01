@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".InputActivity">
+
+    <EditText
+        android:id="@+id/input_fitness_name"
+        android:textSize="@dimen/sp16"
+        android:background="@drawable/custom_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp32"
+        android:layout_marginEnd="@dimen/dp64"
+        android:autofillHints="editFitnessName"
+        android:hint="@string/input_fitness_name"
+        android:textColorHint="@color/teal_700"
+        android:inputType="text"
+        android:minHeight="@dimen/dp64"
+        android:textColor="@color/teal_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fitness_name"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/fitness_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp16"
+        android:layout_marginStart="@dimen/dp64"
+        android:layout_marginEnd="@dimen/dp16"
+        android:text="@string/fitness_address"
+        android:textColor="@color/teal_700"
+        app:layout_constraintBaseline_toBaselineOf="@+id/input_fitness_address"
+        app:layout_constraintEnd_toStartOf="@+id/input_fitness_address"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/fitness_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp16"
+        android:layout_marginStart="@dimen/dp64"
+        android:layout_marginEnd="@dimen/dp16"
+        android:text="@string/fitness_name"
+        android:textColor="@color/teal_700"
+        app:layout_constraintBaseline_toBaselineOf="@+id/input_fitness_name"
+        app:layout_constraintEnd_toStartOf="@+id/input_fitness_name"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/input_fitness_address"
+        android:textSize="@dimen/sp16"
+        android:background="@drawable/custom_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp32"
+        android:layout_marginEnd="@dimen/dp64"
+        android:autofillHints="editFitnessAddress"
+        android:hint="@string/input_fitness_address"
+        android:textColorHint="@color/teal_700"
+        android:inputType="text"
+        android:minHeight="@dimen/dp64"
+        android:textColor="@color/teal_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fitness_address"
+        app:layout_constraintTop_toBottomOf="@+id/input_fitness_name"
+        tools:ignore="TextContrastCheck" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="right"
+        app:constraint_referenced_ids="fitness_name,fitness_address"
+        tools:layout_editor_absoluteX="@dimen/dp128"
+        tools:layout_editor_absoluteY="@dimen/dp64" />
+
+    <Button
+        android:id="@+id/send_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp128"
+        android:layout_marginTop="@dimen/dp32"
+        android:layout_marginEnd="@dimen/dp32"
+        android:background="@drawable/custom_button"
+        android:text="@string/send_button"
+        android:textColor="@color/teal_700"
+        app:backgroundTint="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_fitness_address"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/qr_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp32"
+        android:layout_marginEnd="@dimen/dp32"
+        android:background="@drawable/custom_button"
+        android:text="@string/qr_code_button"
+        android:textColor="@color/teal_700"
+        app:backgroundTint="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/send_input"
+        tools:ignore="TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

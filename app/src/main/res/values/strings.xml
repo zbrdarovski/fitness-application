@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Fitness</string>
+    <string name="app_version">Version 6</string>
+    <string name="app_author">by Zdravko Brdarovski</string>
+    <string name="app_description">The #1 fitness app.</string>
+    <string name="runner">Runner image.</string>
+    <string name="yoga">Yoga meditation image.</string>
+    <string name="exercise">Ball exercise image.</string>
+    <string name="input_fitness_name"><u>Input fitness name…</u></string>
+    <string name="input_fitness_address"><u>Input fitness address…</u></string>
+    <string name="fitness_name">Fitness name:</string>
+    <string name="fitness_address">Fitness address:</string>
+    <string name="send_button">SEND</string>
+    <string name="qr_code_button">QR CODE</string>
+    <string name="fitness_image">Fitness image.</string>
+    <string name="about_button">ABOUT</string>
+    <string name="exit_button">EXIT</string>
+    <string name="add_button">ADD</string>
+    <string name="info_button">INFO</string>
+
+</resources>

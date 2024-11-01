@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Фитнес</string>
+    <string name="app_version">Верзија 6</string>
+    <string name="app_author">изработил Здравко Брдаровски</string>
+    <string name="app_description">#1 фитнес апликација.</string>
+    <string name="runner">тркач</string>
+    <string name="yoga">медитација</string>
+    <string name="exercise">вежбање</string>
+    <string name="input_fitness_name"><u>Внеси фитнес име…</u></string>
+    <string name="input_fitness_address"><u>Внеси фитнес адреса…</u></string>
+    <string name="fitness_name">Фитнес име:</string>
+    <string name="fitness_address">Фитнес адреса:</string>
+    <string name="send_button">ИСПРАТИ</string>
+    <string name="qr_code_button">QR КОД</string>
+    <string name="fitness_image">Фитнес слика.</string>
+    <string name="about_button">ЗА НАС</string>
+    <string name="exit_button">ИЗЛЕЗ</string>
+    <string name="add_button">ДОДАДИ</string>
+    <string name="info_button">ИНФОРМАЦИИ</string>
+
+</resources>
